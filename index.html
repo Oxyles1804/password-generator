@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Password Generator</h1>
+
+        <section class="password-display">
+            <input type="text" id="password" readonly>
+            <button id="copy-button">Copier</button>
+        </section>
+
+        <section class="strength-section">
+
+            <div class="strength-header">
+                <span>Robustesse</span>
+                <span id="strength-text">-</span>
+            </div>
+
+            <div class="strength-bar">
+                <div id="strength-fill"></div>
+            </div>
+
+        </section>
+
+        <section class="options">
+
+            <div class="length-option">
+
+                <div class="length-header">
+                    <label for="length">Longueur</label>
+                    <span id="length-value">16</span>
+                </div>
+
+                <input
+                    type="range"
+                    id="length"
+                    min="4"
+                    max="64"
+                    value="16"
+                >
+
+            </div>
+
+            <label>
+                <input type="checkbox" id="lowercase" checked>
+                Minuscules
+            </label>
+
+            <label>
+                <input type="checkbox" id="uppercase" checked>
+                Majuscules
+            </label>
+
+            <label>
+                <input type="checkbox" id="numbers" checked>
+                Chiffres
+            </label>
+
+            <label>
+                <input type="checkbox" id="symbols" checked>
+                Symboles
+            </label>
+
+        </section>
+
+    <button id="generate-button">Générer</button>
+
+        <section class="tester-section">
+
+        <h2>Tester un mot de passe</h2>
+
+        <input
+            type="text"
+            id="test-password"
+            placeholder="Entrez votre mot de passe..."
+            autocomplete="off"
+            spellcheck="false"
+        >
+
+        <div class="strength-header">
+            <span>Robustesse</span>
+            <span id="test-strength-text">-</span>
+        </div>
+
+        <div class="strength-bar">
+            <div id="test-strength-fill"></div>
+        </div>
+
+        <div class="password-feedback">
+
+            <h3>Analyse</h3>
+
+            <ul id="feedback-list"></ul>
+
+        </div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

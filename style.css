@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    background-color: #111827;
+    color: white;
+}
+
+.container {
+    width: 450px;
+    padding: 30px;
+
+    background-color: #1f2937;
+    border-radius: 12px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.password-display {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.password-display input {
+    flex: 1;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #111827;
+    color: white;
+
+    font-size: 16px;
+    font-family: monospace;
+
+    outline: none;
+}
+
+button {
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: transform 0.15s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+.length-option {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.length-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#length-value {
+    font-weight: bold;
+}
+
+#length {
+    width: 100%;
+    cursor: pointer;
+}
+
+#generate-button {
+    width: 100%;
+    margin-top: 10px;
+
+    font-size: 16px;
+}
+
+.strength-section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.strength-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.strength-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #374151;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#strength-fill {
+    width: 0%;
+    height: 100%;
+    background-color: #22c55e;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+
+.tester-section {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #374151;
+}
+
+.tester-section h2 {
+    margin-bottom: 15px;
+}
+
+#test-password {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #111827;
+    color: white;
+
+    font-size: 16px;
+    font-family: monospace;
+
+    outline: none;
+
+    margin-bottom: 20px;
+}
+
+#test-strength-fill {
+    height: 100%;
+    width: 0%;
+
+    border-radius: 10px;
+
+    transition: width 0.3s ease;
+}
+
+.password-feedback {
+    margin-top: 20px;
+}
+
+.password-feedback h3 {
+    margin-bottom: 10px;
+}
+
+#feedback-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#feedback-list li {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
